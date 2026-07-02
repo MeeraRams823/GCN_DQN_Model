@@ -36,4 +36,6 @@ def get_report(reportrequest: ReportRequest):
     report = advisor.run()
     return {"report": report}
 
-
+@app.get("/test")
+def home():
+    return {"message": "Hello World"}
